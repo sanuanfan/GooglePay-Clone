@@ -10,7 +10,28 @@ class Bills_and_Recharges extends StatelessWidget {
     return Container(
       child: SingleChildScrollView(
         child: Column(
-          children: [Text("data")],
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Bills & recharges",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 23,
+                  fontWeight: FontWeight.w400),
+            ),
+            SizedBox(
+              height: 7,
+            ),
+            Text("No bills due. Try adding these!",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 13,
+                    fontWeight: FontWeight.w400,
+                    letterSpacing: 1.3)),
+            SizedBox(
+              height: 20,
+            ),
+          ],
         ),
       ),
     );

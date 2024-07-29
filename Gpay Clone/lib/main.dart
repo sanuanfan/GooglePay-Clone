@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gpay_clone/screens/home_screen.dart';
+import 'package:gpay_clone/screens/splash_screen.dart';
 import 'colors.dart';
 
 void main() {
@@ -16,7 +17,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: primaryColor,
       ),
-      home: Home_Screen(),
+      home: Splash_Screen(),
+      routes: {
+        'home_screen' :(context) => Home_Screen(),
+        'splash_screen' :(context) =>Splash_Screen(),
+      },
     );
   }
 }

@@ -377,8 +377,10 @@ class Home_Screen extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            Bills_and_Recharges()
-
+            Padding(
+              padding: const EdgeInsets.only(left: 30),
+              child: Bills_and_Recharges(),
+            )
           ],
         ),
       )),
