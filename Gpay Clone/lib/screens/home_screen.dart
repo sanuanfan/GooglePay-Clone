@@ -5,6 +5,7 @@ import 'package:gpay_clone/colors.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:gpay_clone/widgets/bills_and_recharges.dart';
 import 'package:gpay_clone/widgets/business_widget.dart';
+import 'package:gpay_clone/widgets/offers_and_rewards.dart';
 import 'package:gpay_clone/widgets/people_widget.dart';
 
 class Home_Screen extends StatelessWidget {
@@ -378,8 +379,54 @@ class Home_Screen extends StatelessWidget {
               height: 20,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 30),
+                padding: const EdgeInsets.only(
+                  left: 30,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Bills & recharges",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 23,
+                          fontWeight: FontWeight.w400),
+                    ),
+                    SizedBox(
+                      height: 7,
+                    ),
+                    Text("No bills due. Try adding these!",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 13,
+                            fontWeight: FontWeight.w400,
+                            letterSpacing: 1.3)),
+                  ],
+                )),
+            SizedBox(
+              height: 5,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20),
               child: Bills_and_Recharges(),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 30),
+              child: Text("Offers \& rewards",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 23,
+                      fontWeight: FontWeight.w400)),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left:20),
+              child: Offers_and_Rewards(),
             )
           ],
         ),
