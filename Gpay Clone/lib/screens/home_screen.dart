@@ -5,6 +5,7 @@ import 'package:gpay_clone/colors.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:gpay_clone/widgets/bills_and_recharges.dart';
 import 'package:gpay_clone/widgets/business_widget.dart';
+import 'package:gpay_clone/widgets/manage_your_money.dart';
 import 'package:gpay_clone/widgets/offers_and_rewards.dart';
 import 'package:gpay_clone/widgets/people_widget.dart';
 
@@ -413,20 +414,38 @@ class Home_Screen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 30),
+            const Padding(
+              padding: EdgeInsets.only(left: 30),
               child: Text("Offers \& rewards",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 23,
                       fontWeight: FontWeight.w400)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left:20),
+            const Padding(
+              padding: EdgeInsets.only(left: 20),
               child: Offers_and_Rewards(),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Padding(
+              padding: EdgeInsets.only(left: 30),
+              child: Text("Manage your money",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 23,
+                      fontWeight: FontWeight.w400)),
+            ),
+            const SizedBox(
+              height: 25,
+            ),
+            const Padding(
+              padding: EdgeInsets.only(left: 30, right: 20),
+              child: Manage_your_money(),
             )
           ],
         ),
