@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gpay_clone/screens/home_screen.dart';
+import 'package:gpay_clone/screens/HomeScreen/home_screen.dart';
+import 'package:gpay_clone/screens/Profile/profile_page.dart';
 import 'package:gpay_clone/screens/splash_screen.dart';
 import 'colors.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'home_screen' :(context) => Home_Screen(),
         'splash_screen' :(context) =>Splash_Screen(),
+        'profile_page' :(context) => Profile_Page(),
       },
     );
   }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../colors.dart';
+import '../../colors.dart';
 
 class Offers_and_Rewards extends StatelessWidget {
   const Offers_and_Rewards({super.key});

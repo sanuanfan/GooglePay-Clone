@@ -3,11 +3,12 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:gpay_clone/colors.dart';
 import 'package:dotted_border/dotted_border.dart';
-import 'package:gpay_clone/widgets/bills_and_recharges.dart';
-import 'package:gpay_clone/widgets/business_widget.dart';
-import 'package:gpay_clone/widgets/manage_your_money.dart';
-import 'package:gpay_clone/widgets/offers_and_rewards.dart';
-import 'package:gpay_clone/widgets/people_widget.dart';
+import 'package:gpay_clone/widgets/HomeScreenWidgets/bills_and_recharges.dart';
+import 'package:gpay_clone/widgets/HomeScreenWidgets/business_widget.dart';
+import 'package:gpay_clone/widgets/HomeScreenWidgets/manage_your_money.dart';
+import 'package:gpay_clone/widgets/HomeScreenWidgets/offers_and_rewards.dart';
+import 'package:gpay_clone/widgets/HomeScreenWidgets/people_widget.dart';
+import 'package:gpay_clone/widgets/HomeScreenWidgets/referal.dart';
 
 class Home_Screen extends StatelessWidget {
   const Home_Screen({super.key});
@@ -124,16 +125,18 @@ class Home_Screen extends StatelessWidget {
                         IconButton(
                             onPressed: () {},
                             icon: Icon(
-                              Icons.contact_phone,
+                              Icons.phonelink_ring,
                               color: iconcolor,
                               size: 30,
                             )),
                         Text(
-                          "Scan any \n QR code",
+                          "Pay \n contact",
                           style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400),
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                          textAlign: TextAlign.center,
                         )
                       ],
                     ),
@@ -150,11 +153,12 @@ class Home_Screen extends StatelessWidget {
                               size: 30,
                             )),
                         Text(
-                          "Scan any \n QR code",
+                          "Pay phone \n number ",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 14,
                               fontWeight: FontWeight.w400),
+                          textAlign: TextAlign.center,
                         )
                       ],
                     ),
@@ -166,16 +170,17 @@ class Home_Screen extends StatelessWidget {
                         IconButton(
                             onPressed: () {},
                             icon: Icon(
-                              Icons.home_max,
+                              Icons.account_balance_outlined,
                               color: iconcolor,
                               size: 30,
                             )),
                         Text(
-                          "Scan any \n QR code",
+                          "Bank\n transfer",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 14,
                               fontWeight: FontWeight.w400),
+                          textAlign: TextAlign.center,
                         )
                       ],
                     ),
@@ -198,16 +203,17 @@ class Home_Screen extends StatelessWidget {
                         IconButton(
                             onPressed: () {},
                             icon: Icon(
-                              Icons.qr_code_scanner,
+                              Icons.alternate_email_sharp,
                               color: iconcolor,
                               size: 30,
                             )),
                         Text(
-                          "Scan any \n QR code",
+                          "Pay UPI ID\n or number",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 14,
                               fontWeight: FontWeight.w400),
+                          textAlign: TextAlign.center,
                         )
                       ],
                     ),
@@ -219,16 +225,17 @@ class Home_Screen extends StatelessWidget {
                         IconButton(
                             onPressed: () {},
                             icon: Icon(
-                              Icons.contact_phone,
+                              Icons.person_outline,
                               color: iconcolor,
-                              size: 30,
+                              size: 35,
                             )),
                         Text(
-                          "Scan any \n QR code",
+                          "Self\n transfer",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 14,
                               fontWeight: FontWeight.w400),
+                          textAlign: TextAlign.center,
                         )
                       ],
                     ),
@@ -240,16 +247,17 @@ class Home_Screen extends StatelessWidget {
                         IconButton(
                             onPressed: () {},
                             icon: Icon(
-                              Icons.phone_forwarded,
+                              Icons.library_add_check_outlined,
                               color: iconcolor,
                               size: 30,
                             )),
                         Text(
-                          "Scan any \n QR code",
+                          "Pay\n bills",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 14,
                               fontWeight: FontWeight.w400),
+                          textAlign: TextAlign.center,
                         )
                       ],
                     ),
@@ -261,16 +269,17 @@ class Home_Screen extends StatelessWidget {
                         IconButton(
                             onPressed: () {},
                             icon: Icon(
-                              Icons.home_max,
+                              Icons.charging_station_outlined,
                               color: iconcolor,
                               size: 30,
                             )),
                         Text(
-                          "Scan any \n QR code",
+                          "Mobile\n recharge",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 14,
                               fontWeight: FontWeight.w400),
+                          textAlign: TextAlign.center,
                         )
                       ],
                     ),
@@ -446,7 +455,11 @@ class Home_Screen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 30, right: 20),
               child: Manage_your_money(),
-            )
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            Referal()
           ],
         ),
       )),
