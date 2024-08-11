@@ -75,9 +75,16 @@ class Home_Screen extends StatelessWidget {
                     SizedBox(
                       width: 15,
                     ),
-                    CircleAvatar(
-                      radius: 20,
-                      backgroundImage: AssetImage("assets/images/profile.jpg"),
+                    InkWell(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('profile_page');
+                      },
+                      child: CircleAvatar(
+                        radius: 20,
+                        backgroundImage:
+                            AssetImage("assets/images/profile.jpg"),
+                      ),
                     ),
                   ],
                 ),
