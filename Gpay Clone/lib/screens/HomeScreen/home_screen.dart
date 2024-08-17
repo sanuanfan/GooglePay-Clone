@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:gpay_clone/colors.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:gpay_clone/widgets/HomeScreenWidgets/bills_and_recharges.dart';
@@ -428,7 +428,7 @@ class Home_Screen extends StatelessWidget {
               child: Bills_and_Recharges(),
             ),
             SizedBox(
-              height: 10,
+              height: 30,
             ),
             const Padding(
               padding: EdgeInsets.only(left: 30),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:gpay_clone/colors.dart';
 
 class People_list extends StatelessWidget {
@@ -158,6 +158,7 @@ class People_list extends StatelessWidget {
                       child: Icon(
                         Icons.keyboard_arrow_down,
                         size: 40,
+                        color: iconcolor,
                       ),
                       radius: 33,
                     ),

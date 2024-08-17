@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../../colors.dart';
 
@@ -20,6 +20,7 @@ class Offers_and_Rewards extends StatelessWidget {
                   backgroundColor: secondaryColor,
                   child: Icon(
                     Icons.keyboard_arrow_down,
+                    color: iconcolor,
                     size: 40,
                   ),
                   radius: 33,

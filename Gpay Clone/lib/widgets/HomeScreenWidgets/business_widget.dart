@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../../colors.dart';
 
@@ -82,6 +82,7 @@ class business_widget extends StatelessWidget {
                         child: Icon(
                           Icons.keyboard_arrow_down,
                           size: 40,
+                          color: iconcolor,
                         ),
                         radius: 33,
                       ),

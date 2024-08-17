@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:gpay_clone/colors.dart';
 
 class Manage_your_money extends StatelessWidget {
@@ -76,7 +76,7 @@ class Manage_your_money extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  width: 65,
+                  width: 60,
                 ),
                 Icon(
                   Icons.keyboard_arrow_right_sharp,
@@ -113,7 +113,7 @@ class Manage_your_money extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  width: 120,
+                  width: 115,
                 ),
                 Icon(
                   Icons.keyboard_arrow_right_sharp,

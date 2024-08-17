@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:gpay_clone/colors.dart';
 
 class Bills_and_Recharges extends StatelessWidget {
@@ -30,6 +30,7 @@ class Bills_and_Recharges extends StatelessWidget {
                         child: Icon(
                           Icons.credit_card,
                           size: 30,
+                          color: iconcolor,
                         ),
                         radius: 33,
                       ),
@@ -52,6 +53,7 @@ class Bills_and_Recharges extends StatelessWidget {
                         child: Icon(
                           Icons.charging_station_outlined,
                           size: 30,
+                          color: iconcolor,
                         ),
                         radius: 33,
                       ),
@@ -76,6 +78,7 @@ class Bills_and_Recharges extends StatelessWidget {
                         backgroundColor: secondaryColor,
                         child: Icon(
                           Icons.tv,
+                          color: iconcolor,
                           size: 30,
                         ),
                         radius: 33,
@@ -98,6 +101,7 @@ class Bills_and_Recharges extends StatelessWidget {
                         backgroundColor: secondaryColor,
                         child: Icon(
                           Icons.lightbulb_outline_rounded,
+                          color: iconcolor,
                           size: 30,
                         ),
                         radius: 33,
