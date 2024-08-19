@@ -88,6 +88,7 @@ class Profile_Page extends StatelessWidget {
                             ])
                           ],
                         ),
+                        
                         InkWell(
                           onTap: () {},
                           child: CircleAvatar(
