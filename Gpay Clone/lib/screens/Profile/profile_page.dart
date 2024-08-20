@@ -88,7 +88,6 @@ class Profile_Page extends StatelessWidget {
                             ])
                           ],
                         ),
-                        
                         InkWell(
                           onTap: () {},
                           child: CircleAvatar(
@@ -101,6 +100,36 @@ class Profile_Page extends StatelessWidget {
                     ),
                   )
                 ]),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Container(
+                  height: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25),
+                    color: secondaryColor,
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text("Set up payment method",
+                                style: TextStyle(color: iconcolor)),
+                            IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.arrow_forward,
+                                  color: iconcolor,
+                                ))
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               )
             ],
           ),
