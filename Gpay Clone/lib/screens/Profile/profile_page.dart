@@ -112,12 +112,17 @@ class Profile_Page extends StatelessWidget {
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        padding:
+                            const EdgeInsets.only(left: 10, right: 10, top: 6),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text("Set up payment method",
-                                style: TextStyle(color: iconcolor)),
+                            Text("Set up payment method 1/3",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w500,
+                                    letterSpacing: 1)),
                             IconButton(
                                 onPressed: () {},
                                 icon: Icon(
